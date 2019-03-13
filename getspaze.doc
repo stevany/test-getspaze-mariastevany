@@ -1,0 +1,138 @@
+1. Pengulangan bintang
+<?php 
+function bintang(){ 
+  for($i=0;$i<=5;$i++){  
+    for($k=5;$k>=$i;$k--){  
+      echo "  ";  
+    }  
+    for($j=1;$j<=$i;$j++){  
+      echo "*  ";  
+  }  
+  echo "<br>";  
+  }  
+  for($i=4;$i>=1;$i--){  
+    for($k=5;$k>=$i;$k--){  
+      echo "  ";  
+    }  
+    for($j=1;$j<=$i;$j++){  
+      echo "*  ";  
+    }  
+    echo "<br>";  
+  }  
+}
+bintang();
+?>
+2. prima, fibonaci, faktorial
+<?php
+function bilangan_prima(){
+  for($i=1;$i<=10;$i++){ 
+        $a = 0; 
+        for($j=1;$j<=$i;$j++){ 
+            if($i % $j == 0){ 
+                $a++;
+            }
+        }
+        if($a == 2){
+         echo $i.' ';
+        }
+    }
+}
+function fibonaci(){
+  $angka_sebelumnya=0;
+  $angka_sekarang=1;
+  
+  echo "$angka_sebelumnya $angka_sekarang";
+ 
+  for ($i=0; $i<10; $i++){
+    $output = $angka_sekarang + $angka_sebelumnya;
+    echo " $output";
+  
+  
+    $angka_sebelumnya = $angka_sekarang;
+    $angka_sekarang = $output;
+  }
+}
+function faktorial($bilangan{
+  if($bilangan>=1) {
+    echo "Faktorial secara ascending:<br>";
+         
+    for($i=1; $i <= $bilangan; $i++) {
+      $faktorial = 1; //set nilai awal
+      echo $i. "! = "; 
+         
+       for($j=$i; $j > 0; $j--) {
+         if($j == 1){
+            echo " 1 = " .$faktorial;
+         } else {
+            <br>echo $j ." x ";<br>        
+         }
+         <br>$faktorial*=$j; //menghitung hasil faktorial
+       }
+     }
+  } 
+}
+bilangan_prima();
+fibonaci();
+faktorial(5);
+?>  
+3. 3. syntax error, unexpected '25' (T_LNUMBER), expecting variable (T_VARIABLE) or '{' or '$'
+4. __get()
+Method ini akan diakses jika program ingin mengambil nilai dari property yang invisible.
+ 
+__set()
+Method ini akan diakses jika program ingin memberikan nilai dari suatu property yang inivisible.
+ 
+__isset()
+Method ini akan diakses jika program menjalankan isset() atau empty() pada property yang tidak bisa diakses.
+ 
+__unset()
+Method ini akan diakses jika program menjalankan unset() pada property yang tidak bisa diakses.
+
+__call()
+Method ini akan diakses saat object menjalankan method yang invisible atau tidak didefinisikan 
+ 
+__callStatic()
+Method ini akan diakses jika kita menjalankan suatu static method yang invisible atau tidak didefinisikan
+  
+5. luas lingkaran & volume bola
+
+class Luas {
+  var $phi;
+
+  function luasLingkaran($bilangan){
+	$this->phi = 22/7;
+	$luas_lingkaran = $phi * $bilangan * $bilangan;
+	
+	echo "Lingkaranan dengan jari-jari $bilangan maka memiliki <br>";
+	echo "Luas : $luas_lingkaran <br>";
+  }
+  function volumeBola($bilangan){
+    $volume_bola = 4/3 * $this->phi * $bilangan * $bilangan * $bilangan;
+    
+    echo "Volume bola: $volume_bola";    
+  }
+}
+
+$luas = new Luas();
+$luas->luasLingkaran(14);
+$luas->volumeBola(14);
+
+6. cURL adalah librari untuk mengtransfer data ke berbagai protokol, seperti : http, ftp, tftp. Dengan menggunakan cURL, kita dapat mengirimkan HTTP request dengan menggunakan method GET atau POST.
+
+7. Web service adalah sebuah sistem software yang di desain untuk mendukung interoperabilitas interaksi mesin ke mesin melalui sebuah jaringan. perintah yang digunakan untuk memanggil web service client adalah menggunakan library Guzzle atau menggunakan curl.
+
+8. parseInt -> konversi string ke integer
+   parseFloat -> konversi string ke float
+   eval -> mengevaluasi ekspresi / pernyataan pada js.
+   window.console -> memberikan informasi logging pada browser console
+   alert -> menampilkan alert box dengan pesan yang spesifik dan sebuat tombol ok.
+   console.log -> menulis pesan ke log saat debugging console
+   console.info ->menulis pesan ke console
+
+9. Inner Join merupakan perintah untuk menampilkan semua data yang mempunyai nilai sama, 
+ Left Join merupakan cara menghubungkan tabel dan menampilkan semua data (kiri) pada tabel yang tidak berhubungan, sedangkan data yang kosong akan bernilai NULL.
+Right Join, fungsi ini hampir sama dengan fungsi Left Join ataupun kebalikannya, dimana Right Join akan menghubungkan tabel dan menampilkan semua data (kanan) pada tabel yang tidak berhubungan, dan data yang kosong akan bernilai NULL.
+
+  
+  
+
